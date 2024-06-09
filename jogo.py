@@ -12,7 +12,7 @@ r = {1:'Primeira', 2:'Segunda', 3:'Terceira', 4:'Quarta', 5:'Quinta', 6:'Sexta',
 #### pelo computador no intervalo (0 a 50).
 c = 1
 f = 9
-for i, y in r.items():
+for y in r.values():
     num = int(input('Informe um numero: '))
     if num > np and c <= 10:
         print(f"Perdeu a {y} chance, o numero sorteado é menor que {num}")
