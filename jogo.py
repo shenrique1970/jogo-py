@@ -20,13 +20,13 @@ for y in r.values():
 
     if int(num) > np and c <= 10:
         print(f"Perdeu a {y} chance, o numero sorteado é menor que {num}")
-    if int(num) < np and c <= 10:
+    elif int(num) < np and c <= 10:
         print(f"Perdeu a {y} chance, o numero sorteado é maior que {num}")
-    if f != 0 and int(num) != np:
+    elif f != 0 and int(num) != np:
         print(f"faltam {f} chances!")
-    if c == 10:
+    elif c == 10:
         print('Suas chances de 10, acabaram')
-    if int(num) == np:
+    elif int(num) == np:
         print(f"Acertou na {y} chance! faltando {f} de 10")
         break
 
