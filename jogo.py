@@ -13,16 +13,20 @@ r = {1:'Primeira', 2:'Segunda', 3:'Terceira', 4:'Quarta', 5:'Quinta', 6:'Sexta',
 c = 1
 f = 9
 for y in r.values():
-    num = int(input('Informe um numero: '))
-    if num > np and c <= 10:
+    # num = int(input("Descubra numero entre 0 a 50: "))
+    while not (num := input("Descubra numero entre 0 a 50: ")).isdigit() or (n := int(num)) < 0 or int(num) > 50:
+        print('Valor INVÁLIDO!')
+        
+
+    if int(num) > np and c <= 10:
         print(f"Perdeu a {y} chance, o numero sorteado é menor que {num}")
-    if num < np and c <= 10:
+    if int(num) < np and c <= 10:
         print(f"Perdeu a {y} chance, o numero sorteado é maior que {num}")
-    if f != 0 and num != np:
+    if f != 0 and int(num) != np:
         print(f"faltam {f} chances!")
     if c == 10:
         print('Suas chances de 10, acabaram')
-    if num == np:
+    if int(num) == np:
         print(f"Acertou na {y} chance! faltando {f} de 10")
         break
 
