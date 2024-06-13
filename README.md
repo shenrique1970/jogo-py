@@ -7,7 +7,7 @@ números.
 - O jogador deverá escolher um número inteiro qualquer entre 0 e 50;
 - O jogador receberá dicas se seu chute está acima ou abaixo do valor oculto
 ### gerado pelo computador de maneira aleatória, caso não acerte de primeira o
-número;
+### número;
 - O jogador terá 10 tentativas para adivinhar qual foi o número oculto gerado
 ### pelo computador entre o intervalo (0 a 50).
 - Informe ao jogador o nº de tentativas feitas e quantas tentativas ainda restam
