@@ -13,3 +13,4 @@ números.
 - Informe ao jogador o nº de tentativas feitas e quantas tentativas ainda restam
 para ele.
 ![tela](https://github.com/shenrique1970/Py/assets/79231553/9952fc13-9fc4-48b6-a236-61721ecd1a1e)
+![tela](https://github.com/shenrique1970/Py/assets/79231553/79ea8cfd-5118-4d1c-88bf-9f42d400b88c)
