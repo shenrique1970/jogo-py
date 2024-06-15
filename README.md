@@ -14,4 +14,5 @@ números.
 para ele.
 ![tela](https://github.com/shenrique1970/Py/assets/79231553/9952fc13-9fc4-48b6-a236-61721ecd1a1e)
 
-![tela](https://github.com/shenrique1970/Py/assets/79231553/52ca47c0-e83e-4e31-ab5c-4e627f46e70e)
+
+![Capturar](https://github.com/shenrique1970/Py/assets/79231553/af4e3c6a-909d-4c41-b43e-1cc84b737cf4)
