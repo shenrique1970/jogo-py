@@ -12,3 +12,4 @@ números.
 ### pelo computador entre o intervalo (0 a 50).
 - Informe ao jogador o nº de tentativas feitas e quantas tentativas ainda restam
 para ele.
+![tela](https://github.com/shenrique1970/Py/assets/79231553/9952fc13-9fc4-48b6-a236-61721ecd1a1e)
