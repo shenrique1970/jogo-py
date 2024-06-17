@@ -13,7 +13,6 @@ r = {1:'Primeira', 2:'Segunda', 3:'Terceira', 4:'Quarta', 5:'Quinta', 6:'Sexta',
 c = 1
 f = 9
 for y in r.values():
-    # num = int(input("Descubra numero entre 0 a 50: "))
     while not (num := input("Descubra numero entre 0 a 50: ")).isdigit() or (n := int(num)) < 0 or int(num) > 50:
         print('Valor INVÁLIDO!')
         
