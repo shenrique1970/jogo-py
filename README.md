@@ -16,3 +16,7 @@ para ele.
 
 
 ![Capturar](https://github.com/shenrique1970/Py/assets/79231553/af4e3c6a-909d-4c41-b43e-1cc84b737cf4)
+
+
+
+![jogo](https://github.com/user-attachments/assets/3683389f-3986-44b0-9094-5b085450905d)
