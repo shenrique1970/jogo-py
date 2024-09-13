@@ -1,5 +1,5 @@
 import random
-import numpy as np
+#import numpy as np
 
 # O jogador deverá escolher um número inteiro qualquer entre 0 e 50.
 np = random.randint(0,50)
