@@ -1,2 +1,2 @@
-# Jogo em Python. De acerto o numero.
+# Jogo em Python. De acerte o numero.
 # Versão 2 do jogo com implemetações
