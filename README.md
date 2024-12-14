@@ -1,2 +1,2 @@
 # jogo em Python
-# jogo em Ruby primeiros passos.
+# Versão 2 do jogo com implemetações
