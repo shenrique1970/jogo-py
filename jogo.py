@@ -5,7 +5,7 @@ ns = rd.randint(0, 50)  # Gera um número secreto aleatório entre 0 e 50
 
 # Nomeando as jogadas na forma de tupla
 jogadas = ("Primeira", "Segunda", "Terceira", "Quarta", "Quinta", "Sexta",
-           "Setima", "Oitava", "Nona", "Decima")  # Tupla com os nomes das jogadas
+           "Setima", "Oitava", "Nona", "Decima") 
 
 # Você terá 10 tentativas para acertar qual foi o número oculto gerado
 # pelo computador no intervalo (0 a 50).
