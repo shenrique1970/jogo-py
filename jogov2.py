@@ -1,5 +1,7 @@
+# Importa o módulo random e o renomeia como rd
 import random as rd
 
+# Mensagem de boas-vindas
 print("Bem-vindo ao Jogo de Adivinhação!")
 pontuacao = []  # Inicializa a lista de pontuações
 print("Escolha o nível de dificuldade:")
@@ -7,6 +9,7 @@ print("1. Fácil (10 tentativas)")
 print("2. Médio (7 tentativas)")
 print("3. Difícil (5 tentativas)")
 
+# Loop para escolher a dificuldade
 while True:
     dificuldade = input("Digite o número da dificuldade desejada: ")
     if dificuldade == "1":
@@ -21,38 +24,42 @@ while True:
     else:
         print("Opção inválida. Por favor, escolha 1, 2 ou 3.")
 
+# Loop principal do jogo
 while True:
-    numero_secreto = rd.randint(1, 100)
+    numero_secreto = rd.randint(1, 50)
+    # Inicializa as tentativas restantes
     tentativas_restantes = tentativas_totais
+    # Inicializa o contador de tentativas
     tentativas = 0
+    # Inicializa a lista de palpites feitos
     palpites_feitos = []
-    print("\nEu pensei em um número entre 1 e 100.")
+    print("\nEu pensei em um número entre 1 e 50.")
     print(f"Você tem {tentativas_totais} tentativas para adivinhar.")
 
     # Loop de Tentativas
     while tentativas_restantes > 0:
         palpite = input("\nDigite o seu palpite: ")
         # Verificando se o input é um número válido
-        if not palpite.isdigit():
+        if not palpite.isdigit():    # Se o palpite não for um número
             print("Por favor, digite um número válido.")
-            continue
-        palpite = int(palpite)
-        if palpite in palpites_feitos:
+            continue    # Volta para o início do loop
+        palpite = int(palpite)    # Converte o palpite para inteiro
+        if palpite in palpites_feitos:    # Se o palpite já foi feito
             print("Você já tentou esse número. Tente outro.")
-            continue
+            continue    # Volta para o início do loop
         else:
-            palpites_feitos.append(palpite)
-            tentativas += 1
-            tentativas_restantes -= 1
-            print(f"Palpites já feitos: {palpites_feitos}")
+            palpites_feitos.append(palpite)    # Adiciona o palpite à lista de palpites feitos
+            tentativas += 1    # Incrementa o contador de tentativas
+            tentativas_restantes -= 1    # Decrementa as tentativas restantes
+            print(f"Palpites já feitos: {palpites_feitos}")    # Exibe os palpites feitos
 
-        if palpite == numero_secreto:
+        if palpite == numero_secreto:     # Se o palpite estiver correto
             print(f"Parabéns! Você acertou o número em {tentativas} tentativa(s).")
             pontuacao_partida = tentativas_restantes * 10 * (int(dificuldade))  # Cálculo da pontuação
             pontuacao.append(pontuacao_partida)  # Adiciona a pontuação à lista
             print(f"Sua pontuação nesta partida: {pontuacao_partida} pontos.")
-            break
-        elif palpite < numero_secreto:
+            break    # Sai do loop de tentativas
+        elif palpite < numero_secreto:    # Dicas para o jogador
             print("O número é maior que esse.")
         else:
             print("O número é menor que esse.")
